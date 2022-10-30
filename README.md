@@ -694,6 +694,7 @@ Express JS sudah menyediakan 3 buah build-in middleware function yang bisa digun
 3. express.urlEncoded() : Middleware function ini memungkinkan sebuah express application menerima
 HTTP Request yang membawa payload (data) dalam format urlencoded.
 <br>
+
 #### Jenis Express Middleware Berdasarkan Source Middleware Function : Express Third Party (custom) Middleware
 <br>
 Membuat custom middleware function atau menggunakan third party middleware function dapat menambahkan fungsionalitas dari sebuah Express Application.
