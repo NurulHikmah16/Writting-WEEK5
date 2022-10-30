@@ -717,4 +717,24 @@ Berikut adalah contoh third party middleware yang dikelola oleh community:
 
 # **Design Database With MySQL**
 
-**Desain basis data** adalah serangkaian kegiatan yang bertujuan untuk meningkatkan pengembangan, implementasi, dan pemeliharaan sistem manajemen data perusahaan. Tujuan utamanya adalah untuk mencerminkan garis besar sistem database ke dalam model nyata: fisik dan logis. Perancang basis data menentukan data apa yang akan disimpan di dalam basis data, dan bagaimana objek terkait satu sama lain
+**Desain basis data** adalah serangkaian kegiatan yang bertujuan untuk meningkatkan pengembangan, implementasi, dan pemeliharaan sistem manajemen data perusahaan. Tujuan utamanya adalah untuk mencerminkan garis besar sistem database ke dalam model nyata: fisik dan logis. Perancang basis data menentukan data apa yang akan disimpan di dalam basis data, dan bagaimana objek terkait satu sama lain.
+
+Tahapan : 
+
+1. Conceptual Design, pada tahapan ini desain yang dibuat masih berbentuk konsep secara keseluruhan dan umum. Tahap ini fokus pada model data yang akan digunakan tanpa memikirkan logika-logika penyimpanan database dan pertimbangan fisik database tersebut. Output dari tahapan ini biasanya first cut ERD (Entity Relationship Diagram.
+
+2. Menerjemankah Conceptual Design menjadi Logical Design. Akan ada proses validasi model data yang ada, apakah sesuai dengan logika-logika database dan sudah sesuai secara sturktural. Pada tahapan ini juga bisa dilakukan normaliasi untuk melihat kesesuaian model data yang dalam mendukung transaksi yang ada. Beberapa konsep logika database yang digunakan dalam tahapan ini adalah:
+
+    - Strong Entitiy Types
+    - Weak Entitiy Types
+    - One-to-many (1:*) Binary Relationships Types
+    - One-to-one (1:1) Binary Relationships Types
+    - One-to-one (1:1) Recursive Relationships
+    - Superclass/ Subclass Relationships Types
+    - Many-to-many (*:*) Binary Relationships Types
+    - Complex Relationships Types
+    - Multi-valued Attributes
+
+3. Database desain adalah Physical Design. Tahap ini lebih fokus pada structural database secara detail. Penyimpanan data dan hubungan pada database akan dibuat pada tahap ini. Bukan hanya structural dan hubungan data, tapi juga memperhatikan integritas data yang akan disimpan di database tersebut. Secara langsung desain yang sudah ada akan dibuat atau bisa disebut mengkonstruksi database.
+
+    ![data](data.png)
